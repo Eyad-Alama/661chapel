@@ -1,0 +1,87 @@
+/*== General variable */
+$containerwidth: 1280px;
+
+/*== Channels color */
+$featured: #FF6600;
+$specials: #66CC00;
+$causes: #0099CC;
+$social-good: #0099CC;
+$news: #006699;
+$fun: #FFCC00;
+$lifestyle: #999966;
+$design: #990000;
+$sports: #669900;
+$tech: #CC9900;
+$gossip: #D02AA8;
+$entertainment: #6666CC;
+
+
+/*== CSS3 magics */
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin box-shadow($x: 0, $y: 1px, $blur: 0px, $color: #999) {
+	box-shadow:$x $y $blur $color ;
+	-moz-box-shadow:$x $y $blur $color ;
+	-webkit-box-shadow:$x $y $blur $color ;
+}
+
+@mixin box-shadow2($param) {
+	box-shadow:$param;
+	-moz-box-shadow:$param;
+	-webkit-box-shadow:$param ;
+}
+
+@mixin box-shadow-inset($x: 0, $y: 1px, $blur: 0px, $color: #999) {
+	box-shadow:$x $y $blur $color inset;
+	-moz-box-shadow:$x $y $blur $color inset;
+	-webkit-box-shadow:$x $y $blur $color inset;
+}
+
+@mixin box-shadow-multi($param, $param2){
+	box-shadow:$param,$param2 ;
+	-moz-box-shadow:$param,$param2;
+	-webkit-box-shadow:$param,$param2;
+}
+
+@mixin gradient($from:#222, $to:#000) {
+	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background: -moz-linear-gradient(top,  $from,  $to);
+	//filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to');
+}
+
+@mixin text-shadow($x: 0, $y: 0, $blur: 1px, $color: #999) {
+	-webkit-text-shadow: $x $y $blur $color;
+	-moz-text-shadow: $x $y $blur $color;
+	text-shadow: $x $y $blur $color;
+}
+
+@mixin animation($syntax) {
+  -webkit-animation: $syntax;
+     -moz-animation: $syntax;
+          animation: $syntax;
+}
+
+@mixin transform($syntax){
+-webkit-transform: $syntax;
+   -moz-transform: $syntax;
+   		transform: $syntax;
+}
+
+@mixin scale($syntax) {
+  -webkit-transform: scale($syntax);
+     -moz-transform: scale($syntax);
+      -ms-transform: scale($syntax);
+       -o-transform: scale($syntax);
+          transform: scale($syntax);
+}
+
+@mixin transition($syntax) {
+	transition: $syntax;
+	-moz-transition: $syntax;
+	-webkit-transition: $syntax;
+	-o-transition: $syntax;
+}
