@@ -85,3 +85,10 @@ $entertainment: #6666CC;
 	-webkit-transition: $syntax;
 	-o-transition: $syntax;
 }
+
+@mixin bgsize($syntax) {
+  -webkit-background-size: $syntax;
+     -moz-background-size: $syntax;
+       -o-background-size: $syntax;
+          background-size: $syntax;
+}

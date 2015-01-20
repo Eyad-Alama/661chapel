@@ -1,12 +1,19 @@
 var winHeight = $(window).height();
 var winHWidth = $(window).width();
 var imgSlider = $('#img-slider li');
-$(document).ready(recalcScrnsz);
-$(window).resize(recalcScrnsz);
 function recalcScrnsz() {
-	imgSlider.height(winHeight);
-	imgSlider.width(winHWidth);
+	imgSlider.css({
+		height: winHeight,
+		width: winHWidth
+	});
 };
+$(document).ready(recalcScrnsz);
+$(window).resize(function(){
+	imgSlider.css({
+		height: ($(window).height()),
+		width: ($(window).width())
+	})
+});
 
 $(function () {
   var count = $("#img-slider > li").length
