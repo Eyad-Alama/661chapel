@@ -49,3 +49,15 @@ $(window).on('load', function () {
     $("#" + slider).fadeIn(fadeSpeed - 200)
   }
 });
+
+$(document).ready(function() {
+	var bodyClass =  $('body').attr('class');
+	var imgUrl = window.location.origin + ('/images/') + bodyClass;
+	var i = 0;
+	if ($(window).width() < 767) {
+		$(imgSlider).each(function() {
+			i++;
+			$(this).css('background-image', 'url("' + imgUrl + '/img-' + i + '.jpg")');
+		});
+	}
+});
