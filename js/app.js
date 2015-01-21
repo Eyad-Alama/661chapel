@@ -52,9 +52,15 @@ $(window).on('load', function () {
 
 $(document).ready(function() {
 	var bodyClass =  $('body').attr('class');
-	var imgUrl = window.location.origin + ('/images/');
+	// var imgUrl = window.location.origin + ('/images/');
+	var imgUrl =  ('https://dl.dropboxusercontent.com/u/3421451/images/')
 	var i = 0;
+	$(imgSlider).each(function() {
+		i++;
+		$(this).css('background-image', 'url("' + imgUrl + 'img-'  + bodyClass + '-' + i + '.jpg")');
+	});
 	if ($(window).width() < 767) {
+		var i = 0;
 		$(imgSlider).each(function() {
 			i++;
 			$(this).css('background-image', 'url("' + imgUrl + 'xs-'  + bodyClass + '-' + i + '.jpg")');
