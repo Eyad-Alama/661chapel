@@ -15,14 +15,14 @@ $(window).resize(function(){
 	})
 });
 
-$(function () {
+$(window).on('load', function () {
   var count = $("#img-slider > li").length
   var slider = 1
   var speed=5000
-  var fadeSpeed = 300
+  var fadeSpeed = 500
   var loop 
   start()
-  $("#1").fadeIn(fadeSpeed);
+  $("#1").fadeIn(fadeSpeed - 200);
   
   function start(){
     loop = setInterval(next, speed)
@@ -37,7 +37,7 @@ $(function () {
         slider = count
     }
     $("#img-slider > li").fadeOut(fadeSpeed)
-    $("#" + slider).fadeIn(fadeSpeed)
+    $("#" + slider).fadeIn(fadeSpeed - 200)
   }
 
   function next() {
@@ -46,6 +46,6 @@ $(function () {
         slider = 1
     }
     $("#img-slider > li").fadeOut(fadeSpeed)
-    $("#" + slider).fadeIn(fadeSpeed)
+    $("#" + slider).fadeIn(fadeSpeed - 200)
   }
 });
