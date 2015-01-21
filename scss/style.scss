@@ -27,12 +27,16 @@ body {
 	a {
 		background: #fff;
 		position: absolute;
+		@include transition(.2s ease-in-out);
+		&:hover {
+			@include box-shadow(0,0,15px,rgba(0,0,0,0.7));
+		}
 	}
 	.nav-top {
 		top: 0;
 		a {
 			@include rounded(0 0 5px 5px);
-			&.active {
+			&.active, &:hover {
 				background: #A5BD86;
 			}
 		}
@@ -41,14 +45,14 @@ body {
 		bottom: 0;
 		a {
 			@include rounded(5px 5px 0 0);
-			&.active {
-				background: #A5BD86;
+			&.active, &:hover {
+				background: #86BDA2;
 			}
 		}
 	}
 	.nav-top, .nav-bottom {
 		width: 100%;
-		height: 60px;
+		height: 80px;
 		a {
 			width: 30px;
 			height: 100%;
@@ -60,8 +64,8 @@ body {
 		right: 0;
 		a {
 			@include rounded(5px 0 0 5px);
-			&.active {
-				background: #A5BD86;
+			&.active, &:hover {
+				background: #BDBB2D;
 			}
 		}
 	}
@@ -69,14 +73,14 @@ body {
 		left: 0;
 		a {
 			@include rounded(0 5px 5px 0);
-			&.active {
+			&.active, &:hover {
 				background: #D2C697;
 			}
 		}
 	}
 	.nav-right, .nav-left {
 		height: 100%;
-		width: 60px;
+		width: 80px;
 		a {
 			width: 100%;
 			height: 30px;
