@@ -52,12 +52,12 @@ $(window).on('load', function () {
 
 $(document).ready(function() {
 	var bodyClass =  $('body').attr('class');
-	var imgUrl = window.location.origin + ('/images/') + bodyClass;
+	var imgUrl = window.location.origin + ('/images/');
 	var i = 0;
 	if ($(window).width() < 767) {
 		$(imgSlider).each(function() {
 			i++;
-			$(this).css('background-image', 'url("' + imgUrl + '/img-' + i + '.jpg")');
+			$(this).css('background-image', 'url("' + imgUrl + 'xs-'  + bodyClass + '-' + i + '.jpg")');
 		});
 	}
 });
