@@ -4,9 +4,7 @@
 body {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
-	&.contact {
-		background: #222;
-	}
+	background: #222;
 }
 
 .container {
@@ -119,4 +117,12 @@ body {
 		padding: 0;
 		margin: 0;
 	}
+}
+
+#chapel-map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 50%;
 }
