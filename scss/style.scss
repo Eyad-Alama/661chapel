@@ -20,6 +20,11 @@ body {
 	position: absolute;
 	top: 50px;
 	right: 200px;
+	text-indent: -9999px;
+	background: url("https://dl.dropboxusercontent.com/u/3421451/images/main-logo.png") no-repeat top center;
+	width: 214px;
+	height: 120px;
+	background-size: cover;
 }
 
 #main-nav {
@@ -95,7 +100,7 @@ body {
 }
 
 .main-content {
-	margin-top: 150px;
+	margin-top: 20%;
 	h1 {
 		font-size: 43px;
 		font-weight: 300;
