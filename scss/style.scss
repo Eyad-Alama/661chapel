@@ -100,9 +100,8 @@ body {
 		font-size: 43px;
 		font-weight: 300;
 	}
-	.reg-link {
+	.cust-link {
 		text-transform: uppercase;
-		color: #F5C375;
 		text-decoration: none;
 		padding: 10px 16px;
 		background: rgba(0,0,0,0.5);
@@ -111,6 +110,12 @@ body {
 		&:hover {
 			background: rgba(0,0,0,0.8);
 		}
+	}
+	.reg-link {
+		color: #F5C375;
+	}
+	.archi-link {
+		color: #fff;
 	}
 }
 
