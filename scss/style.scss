@@ -97,8 +97,20 @@ body {
 	line-height: 1.6em;
 	font-weight: 300;
 	h1 {
-		font-size: 34px;
-		font-weight: 500;
+		font-size: 43px;
+		font-weight: 300;
+	}
+	.reg-link {
+		text-transform: uppercase;
+		color: #F5C375;
+		text-decoration: none;
+		padding: 10px 16px;
+		background: rgba(0,0,0,0.5);
+		@include rounded(5px);
+		@include transition(.2s);
+		&:hover {
+			background: rgba(0,0,0,0.8);
+		}
 	}
 }
 
