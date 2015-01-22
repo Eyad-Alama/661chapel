@@ -117,6 +117,20 @@ body {
 	.archi-link {
 		color: #fff;
 	}
+	.contact-link {
+		display: block;
+		background: #fff;
+		color: #000;
+		font-size: 14px;
+		line-height: 1.4em;
+		margin-top: 40px;
+		font-weight: 700;
+		width: 80%;
+		@include rounded(0 15px 15px 0);
+		&:hover {
+			color: #fff;
+		}
+	}
 }
 
 .content-wrap {
@@ -135,6 +149,14 @@ body {
 		font-size: 24px;
 		text-transform: uppercase;
 		color: #EEF2B5;
+	}
+}
+
+.contact {
+	.main-content {
+		.wrapper {
+			margin: 150px 0 0 50px;
+		}
 	}
 }
 
