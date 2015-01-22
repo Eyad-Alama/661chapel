@@ -1,10 +1,7 @@
 $(document).ready(function() {
-	$('#splash-scr').css({
+	$('#splash-plus').css({
 		height: winHeight,
 		width: winHWidth
-	});
-	$('.splash-logo').click(function() {
-		$(this).parent().addClass('hideme');
 	});
 });
 
@@ -77,3 +74,5 @@ $(document).ready(function() {
 		});
 	}
 });
+
+var s = skrollr.init();

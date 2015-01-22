@@ -10,37 +10,105 @@ body {
 	font-weight: 300;
 }
 
+.splash {
+	height: 100%;
+	width: 100%;
+	background: url("https://dl.dropboxusercontent.com/u/3421451/images/img-main-1.jpg") no-repeat top center;
+	background-attachment: fixed;
+	background-size: cover;
+	#splash-plus {
+		position: fixed;
+		overflow: hidden;
+		background: #222;
+		opacity: 1;
+		z-index: 10;
+		div {
+			position: absolute;
+		}
+		.plus-top {
+			margin-left: -15px;
+			margin-top: -100px;
+			left: 50%;
+			width: 30px;
+			height: 80px;
+			background: #86BDA2;
+		}
+		.plus-right {
+			top: 50%;
+			margin-top: -15px;
+			margin-right: -100px;
+			width: 80px;
+			height: 30px;
+			background: #BDBB2D;
+		}
+		.plus-bottom {
+			margin-left: -15px;
+			margin-bottom: -100px;
+			left: 50%;
+			width: 30px;
+			height: 80px;
+			background: #D288C3;
+		}
+		.plus-left {
+			top: 50%;
+			margin-top: -15px;
+			margin-left: -100px;
+			width: 80px;
+			height: 30px;
+			background: #D2C697;
+		}
+	}
+	.splash-logo a {
+		width: 350px;
+		height: 198px;
+		text-indent: -9999px;
+		position: fixed;
+		z-index: 1;
+		margin-left: -175px;
+		margin-top: -99px;
+		top: 50%;
+		left: 50%;
+		text-decoration: none;
+		background: url("https://dl.dropboxusercontent.com/u/3421451/images/main-logo-splash.png") no-repeat top center;
+		background-size: cover;
+		@include transition(.2s);
+		&:after {
+			text-indent: 0px;
+			opacity: 0;
+			bottom: -120px;
+			@include transition(.2s);
+		}
+		&:hover {
+			@include transform(translateY(-10px));
+			&:after {
+				position: relative;
+				left: 0;
+				opacity: 1;
+				bottom: -120px;
+				content: "Click to enter";
+				background: rgba(255,255,255,0.2);
+				text-align: center;
+				display: block;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: 300;
+				padding: 8px 0;
+				@include rounded(4px);
+			}
+		}
+	}
+}
+
 .container {
 	@media (min-width: 1440px) {
 		width: 1200px;
 	}
 }
 
-#splash-scr {
-	position: relative;
-	position: fixed;
-	z-index: 11;
-	background: url("https://dl.dropboxusercontent.com/u/3421451/images/img-main-1.jpg") no-repeat top center;
-	background-size: cover;
-	@include transition(.3s);
-	.splash-logo {
-		width: 350px;
-		height: 198px;
-		text-indent: -9999px;
-		position: fixed;
-		margin-left: -175px;
-		margin-top: -99px;
-		top: 50%;
-		left: 50%;
-		background: url("https://dl.dropboxusercontent.com/u/3421451/images/main-logo-splash.png") no-repeat top center;
-		background-size: cover;
-		cursor: pointer;
-	}
-}
+
 .hideme {
 	opacity: 0;
 	z-index: -11 !important;
-	// display: none;
 }
 
 #main-logo {
@@ -72,7 +140,7 @@ body {
 		a {
 			@include rounded(0 0 5px 5px);
 			&.active, &:hover {
-				background: #A5BD86;
+				background: #86BDA2;
 			}
 		}
 	}
@@ -81,7 +149,7 @@ body {
 		a {
 			@include rounded(5px 5px 0 0);
 			&.active, &:hover {
-				background: #86BDA2;
+				background: #D288C3;
 			}
 		}
 	}
