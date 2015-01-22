@@ -16,6 +16,33 @@ body {
 	}
 }
 
+#splash-scr {
+	position: relative;
+	position: fixed;
+	z-index: 11;
+	background: url("https://dl.dropboxusercontent.com/u/3421451/images/img-main-1.jpg") no-repeat top center;
+	background-size: cover;
+	@include transition(.3s);
+	.splash-logo {
+		width: 350px;
+		height: 198px;
+		text-indent: -9999px;
+		position: fixed;
+		margin-left: -175px;
+		margin-top: -99px;
+		top: 50%;
+		left: 50%;
+		background: url("https://dl.dropboxusercontent.com/u/3421451/images/main-logo-splash.png") no-repeat top center;
+		background-size: cover;
+		cursor: pointer;
+	}
+}
+.hideme {
+	opacity: 0;
+	z-index: -11 !important;
+	// display: none;
+}
+
 #main-logo {
 	position: absolute;
 	top: 50px;

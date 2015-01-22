@@ -1,3 +1,13 @@
+$(document).ready(function() {
+	$('#splash-scr').css({
+		height: winHeight,
+		width: winHWidth
+	});
+	$('.splash-logo').click(function() {
+		$(this).parent().addClass('hideme');
+	});
+});
+
 var winHeight = $(window).height();
 var winHWidth = $(window).width();
 var imgSlider = $('#img-slider li');
