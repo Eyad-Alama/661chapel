@@ -58,6 +58,21 @@ body {
 			background: #D2C697;
 		}
 	}
+	.scroll-down {
+		position: fixed;
+		width: 100%;
+		text-align: center;
+		z-index: 12;
+		font-size: 14px;
+		.fa {
+			background: rgba(255,255,255,0.1);
+			@include rounded(50px);
+			width: 18px;
+			height: 18px;
+			line-height: 1.4em;
+			margin-left: 8px;
+		}
+	}
 	.splash-logo a {
 		width: 350px;
 		height: 198px;
