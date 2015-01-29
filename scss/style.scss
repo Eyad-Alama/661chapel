@@ -240,7 +240,7 @@ body {
 		color: #000;
 		font-size: 14px;
 		line-height: 1.4em;
-		margin-top: 40px;
+		margin-top: 30px;
 		font-weight: 700;
 		width: 80%;
 		@include rounded(0 15px 15px 0);
@@ -272,8 +272,11 @@ body {
 .contact {
 	.main-content {
 		.wrapper {
-			margin: 150px 0 0 50px;
+			margin: 50px 0 0 50px;
 		}
+	}
+	.gamuda {
+		margin: 70px 0 0;
 	}
 }
 
