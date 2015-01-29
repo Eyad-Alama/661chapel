@@ -22,43 +22,47 @@ body {
 	#splash-plus {
 		position: fixed;
 		overflow: hidden;
-		background: #222;
+		background: #000;
 		opacity: 1;
 		z-index: 10;
 		div {
 			position: absolute;
 		}
 		.plus-top {
-			margin-left: -15px;
-			margin-top: -100px;
+			margin-left: -25px;
+			margin-top: -180px;
 			left: 50%;
-			width: 30px;
-			height: 80px;
-			background: #86BDA2;
+			width: 50px;
+			height: 160px;
+			background: url("https://dl.dropboxusercontent.com/u/3421451/images/top.gif") no-repeat top center;
+			@include rounded(0 0 15px 15px);
 		}
 		.plus-right {
 			top: 50%;
-			margin-top: -15px;
-			margin-right: -100px;
-			width: 80px;
-			height: 30px;
-			background: #BDBB2D;
+			margin-top: -25px;
+			margin-right: -180px;
+			width: 160px;
+			height: 50px;
+			background: url("https://dl.dropboxusercontent.com/u/3421451/images/right.gif") no-repeat top center;
+			@include rounded(15px 0 0 15px);
 		}
 		.plus-bottom {
-			margin-left: -15px;
-			margin-bottom: -100px;
+			margin-left: -25px;
+			margin-bottom: -180px;
 			left: 50%;
-			width: 30px;
-			height: 80px;
-			background: #D288C3;
+			width: 50px;
+			height: 160px;
+			background: url("https://dl.dropboxusercontent.com/u/3421451/images/bottom.gif") no-repeat top center;
+			@include rounded(15px 15px 0 0);
 		}
 		.plus-left {
 			top: 50%;
-			margin-top: -15px;
-			margin-left: -100px;
-			width: 80px;
-			height: 30px;
-			background: #D2C697;
+			margin-top: -25px;
+			margin-left: -180px;
+			width: 160px;
+			height: 50px;
+			background: url("https://dl.dropboxusercontent.com/u/3421451/images/left.gif") no-repeat top center;
+			@include rounded(0 15px 15px 0);
 		}
 	}
 	.scroll-down {
@@ -141,71 +145,84 @@ body {
 
 #main-nav {
 	position: relative;
-	.navvi {
-		position: fixed;
-		z-index: 1;
-	}
+	// .navvi {
+	// 	position: fixed;
+	// }
 	a {
 		background: #fff;
-		position: absolute;
+		position: fixed;
+		z-index: 1;
 		@include transition(.2s ease-in-out);
 		&:hover {
 			@include box-shadow(0,0,15px,rgba(0,0,0,0.7));
+			margin: 0;
 		}
 	}
 	.nav-top {
-		top: 0;
 		a {
+			top: 0;
+			margin-top: -60px;
 			@include rounded(0 0 5px 5px);
 			&.active, &:hover {
 				background: #86BDA2;
 			}
+			&:hover {
+				margin-top: 0;
+			}
 		}
 	}
 	.nav-bottom {
-		bottom: 0;
 		a {
+			bottom: 0;
+			margin-bottom: -60px;
 			@include rounded(5px 5px 0 0);
 			&.active, &:hover {
 				background: #D288C3;
 			}
+			&:hover {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.nav-top, .nav-bottom {
-		width: 100%;
-		height: 80px;
 		a {
-			width: 30px;
-			height: 100%;
-			margin-left: -15px;
+			width: 50px;
+			height: 160px;
+			margin-left: -25px;
 			left: 50%;
 		}
 	}
 	.nav-right {
-		right: 0;
 		a {
+			right: 0;
+			margin-right: -60px;
 			@include rounded(5px 0 0 5px);
 			&.active, &:hover {
 				background: #BDBB2D;
 			}
+			&:hover {
+				margin-right: 0;
+			}
 		}
 	}
 	.nav-left {
-		left: 0;
 		a {
+			left: 0;
+			margin-left: -60px;
 			@include rounded(0 5px 5px 0);
 			&.active, &:hover {
 				background: #D2C697;
 			}
+			&:hover {
+				margin-left: 0;
+			}
 		}
 	}
 	.nav-right, .nav-left {
-		height: 100%;
-		width: 80px;
 		a {
-			width: 100%;
-			height: 30px;
-			margin-top: -15px;
+			width: 160px;
+			height: 50px;
+			margin-top: -25px;
 			top: 50%;
 		}
 	}
