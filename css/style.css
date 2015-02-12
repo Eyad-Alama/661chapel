@@ -298,12 +298,15 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003284}}
 .contact .gamuda {
   margin: 70px 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003287}}
+.contact .jll {
+  margin: 70px 0 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003292}}
 #img-slider {
   margin: 0;
   padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003295}}
   #img-slider li {
     display: none;
     position: fixed;
@@ -319,7 +322,7 @@ body {
     padding: 0;
     margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003309}}
 #chapel-map iframe {
   position: absolute;
   top: 0;
