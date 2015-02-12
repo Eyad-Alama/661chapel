@@ -133,8 +133,9 @@ body {
 	// 	position: fixed;
 	// }
 	a {
-		background: #fff;
+		background: url("http://i.imgur.com/w3WmUAZ.png") no-repeat #FFF;
 		position: fixed;
+		opacity: 0.65;
 		z-index: 1;
 		@include transition(.2s ease-in-out);
 		&:hover {
@@ -146,6 +147,7 @@ body {
 		a {
 			top: 0;
 			margin-top: -60px;
+			background-position: 6px 75px;
 			@include rounded(0 0 5px 5px);
 			&.active, &:hover {
 				background: #86BDA2;
@@ -159,6 +161,7 @@ body {
 		a {
 			bottom: 0;
 			margin-bottom: -60px;
+			background-position: -81px 23px;
 			@include rounded(5px 5px 0 0);
 			&.active, &:hover {
 				background: #D288C3;
@@ -170,7 +173,7 @@ body {
 	}
 	.nav-top, .nav-bottom {
 		a {
-			width: 50px;
+			width: 60px;
 			height: 160px;
 			margin-left: -25px;
 			left: 50%;
@@ -178,6 +181,7 @@ body {
 	}
 	.nav-right {
 		a {
+			background-position: -213px -2px;
 			right: 0;
 			margin-right: -60px;
 			@include rounded(5px 0 0 5px);
@@ -191,6 +195,7 @@ body {
 	}
 	.nav-left {
 		a {
+			background-position: -80px -3px;
 			left: 0;
 			margin-left: -60px;
 			@include rounded(0 5px 5px 0);
@@ -205,7 +210,7 @@ body {
 	.nav-right, .nav-left {
 		a {
 			width: 160px;
-			height: 50px;
+			height: 60px;
 			margin-top: -25px;
 			top: 50%;
 		}
