@@ -303,10 +303,14 @@ body {
   margin: 70px 0 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003292}}
+.edm {
+  background: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003299}}
 #img-slider {
   margin: 0;
   padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003302}}
   #img-slider li {
     display: none;
     position: fixed;
@@ -322,7 +326,7 @@ body {
     padding: 0;
     margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Sites\/661chapel\/scss\/style\.scss}line{font-family:\00003316}}
 #chapel-map iframe {
   position: absolute;
   top: 0;
