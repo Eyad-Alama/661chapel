@@ -81,6 +81,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	right: 6%;
+  z-index: 999;
 }
 
 .footer {
@@ -240,4 +241,32 @@ body {
 .contact-info img{
 	width: 138px;
   margin-top: 22px;
+}
+
+
+/* Thank you */
+body.thank-you{
+	overflow: hidden;
+}
+
+.thankyou-wrap{
+	background: url('../img/thanku.jpg') transparent no-repeat;
+	height: 100%;
+  position: absolute;
+  left: 166px;
+  top: 110px;
+  width: 100%;
+}
+
+.thankyou-wrap h1{
+  text-decoration: underline;
+  text-transform: uppercase;
+  width: 290px;
+  font-size: 27px;
+  position: absolute;
+  right: 170px;
+  top: -35px;
+  color: #FFCD35;
+  line-height: 1.6;
+  font-weight: 100;
 }
