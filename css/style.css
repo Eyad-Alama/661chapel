@@ -23,14 +23,34 @@ img{
 
 .deco{
 	background: url('../img/deco.png') transparent no-repeat;
-	width: 252px;
+	width: 354px;
 	height: 20px;
 	position: absolute;
 	bottom: 0;
-	right: 6%;
+	right: 0;
   z-index: 999;
 }
 
+.blueplus{
+	background: url('../img/blue_plus.png') transparent no-repeat;
+  position: absolute;
+  top: 105px;
+  z-index: 9999;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.yellowplus{
+	background: url('../img/yellow_plus.png') transparent no-repeat;
+	position: absolute;
+	top: 105px;
+	z-index: 9999;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
 .footer {
   position: absolute;
   bottom: 3%;
@@ -86,7 +106,7 @@ section{
   left: 105px;
 }
 .info p{
-	font-size: 22px;
+	font-size: 23px;
 	line-height: 1.7;
 	color: #FFCD35;
 	font-weight: 100;
@@ -108,4 +128,13 @@ section{
   height: 20px !important;
   z-index: 99999;
   margin-top: 15px;
+}
+
+a.move-down{
+	width: 32px;
+	display: inline-block;
+	position: absolute;
+	bottom: 30px;
+	left: 100px;
+	z-index: 99999;
 }

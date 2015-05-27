@@ -67,8 +67,6 @@ body {
 .header a.logo {
 	display:block;
 	background: url('../img/logo.png') transparent no-repeat;
-	-webkit-background-size: cover;
-	 background-size: cover; 
 	 width: 166px;
 	 height: 130px;
 	 text-indent: -9999px;
@@ -76,11 +74,11 @@ body {
 
 .deco{
 	background: url('../img/deco.png') transparent no-repeat;
-	width: 252px;
+	width: 354px;
 	height: 20px;
 	position: absolute;
 	bottom: 0;
-	right: 6%;
+	right: 0;
   z-index: 999;
 }
 
@@ -196,7 +194,7 @@ body {
   width: 50%;
   position: absolute;
   left: 166px;
-  top: 109px;
+  top: 105px;
   height: 100%;
 }
 
@@ -208,13 +206,14 @@ body {
 	overflow: hidden;
 }
 
+
 .contact-info{
   padding: 100px;
-  height: 77.3%;
+  height: 77.5%;
   background-color: #FFF;
-  left: 60%;
+  left: 59.9%;
   position: absolute;
-  top: 109px;
+  top: 105px;
   width: 28%;
 }
 
@@ -243,10 +242,35 @@ body {
 	font-size: 12px;
 }
 
+.contact-info .yellowplus{
+	top: 0;
+}
 .contact-info img{
 	width: 138px;
   margin-top: 22px;
 }
+
+.blueplus{
+	background: url('../img/blue_plus.png') transparent no-repeat;
+  position: absolute;
+  top: 105px;
+  z-index: 9999;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.yellowplus{
+	background: url('../img/yellow_plus.png') transparent no-repeat;
+	position: absolute;
+	top: 105px;
+	z-index: 9999;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
 
 
 /* Thank you */
@@ -259,7 +283,7 @@ body.thank-you{
 	height: 100%;
   position: absolute;
   left: 166px;
-  top: 110px;
+  top: 105px;
   width: 100%;
 }
 
@@ -269,7 +293,7 @@ body.thank-you{
   width: 290px;
   font-size: 27px;
   position: absolute;
-  right: 170px;
+  right: 250px;
   top: -35px;
   color: #FFCD35;
   line-height: 1.6;
