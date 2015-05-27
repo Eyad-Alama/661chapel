@@ -17,6 +17,9 @@
 		
 		<script type="text/javascript">
 			
+				
+			
+
 			jQuery(function($){
 				
 				$.supersized({
@@ -50,9 +53,10 @@
 					thumb_links				:	1,			// Individual thumb links for each slide
 					thumbnail_navigation    :   0,			// Thumbnail navigation
 					slides 					:  	[			// Slideshow Images
-														{image : 'https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-1.gif', title : '<div class="slideinfo">661+ Chapel St offers a mesmerising view that no other development in the vicinity can match or guarantee.', secondarytitle: '<br /> <p>REGISTER TO SEE A BETTER VIEW OF THE BIGGER PICTURE.', button: '<a href="#" class="cta">REGISTER NOW</a>', url : ''},
-														{image : 'https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.gif', title : '661+ Chapel St offers a mesmerising view that no other development in the vicinity can match or guarantee.', secondarytitle: 'REGISTER TO SEE A BETTER VIEW OF THE BIGGER PICTURE.', button: '<a href="#">REGISTER NOW</a>'},
-														{image : 'https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.gif', title : '661+ Chapel St offers a mesmerising view that no other development in the vicinity can match or guarantee', secondarytitle: 'REGISTER TO SEE A BETTER VIEW OF THE BIGGER PICTURE.', button: '<a href="#">REGISTER NOW</a>'}
+														{image : 'https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-1.gif'},
+														{image : 'https://dl.dropboxusercontent.com/u/44921035/Chapel/big/landing-2.jpg'},
+														{image : 'https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.gif'},
+														{image : 'https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.gif'}
 												],
 												
 					// Theme Options			   
@@ -61,31 +65,24 @@
 					
 				});
 		    });
-
-			$(document).ready(function(){
-				var slideTitle = api.getField('title');
-				var secondaryTitle = api.getField('secondarytitle');
-				var button = api.getField('button');
-
-				$(".slide-1, .slide-2").append(slideTitle);
-				$(".slideinfo").append(secondaryTitle, button);
-
-			});
-
 		</script>
 		
+		<script>
+				var a = document.createElement('a');
+				var linkText = document.createTextNode("REGISTER");
+				a.appendChild(linkText);
+				a.title = "register now";
+				a.href = "/register";
+				document.body.appendChild(a);
+		</script>
 	</head>
-<body>
-
-
-	<!--Demo styles (you can delete this block)-->
-	
+<body>	
 	<div class="header">
 		<a href="#" class="logo">661 Chapel</a>
 	</div>
-	
-	<!--End of styles-->
 
+	<span class="deco"></span>
+	
 	<!--Thumbnail Navigation-->
 	<div id="prevthumb"></div>
 	<div id="nextthumb"></div>
