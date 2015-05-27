@@ -180,3 +180,59 @@ body {
 .slide-0.prevslide, .slide-1.prevslide, .slide-2.prevslide, .slide-3.prevslide {
 	display: none !important;
 }
+
+/*Wufoo Form*/
+#wufoo-z1hu24mt0es8pzx{
+  width: 50%;
+  position: absolute;
+  left: 166px;
+  top: 109px;
+  height: 100%;
+}
+
+#wufoo-z1hu24mt0es8pzx iframe{
+	height: 100%;
+}
+
+#wufoo-z1hu24mt0es8pzx body{
+	overflow: hidden;
+}
+
+.contact-info{
+  padding: 100px;
+  height: 77.3%;
+  background-color: #FFF;
+  left: 60%;
+  position: absolute;
+  top: 109px;
+  width: 28%;
+}
+
+.contact-info h1{
+  text-decoration: underline;
+  width: 230px;
+}
+
+.contact-info .address{
+	list-style: none;
+  margin-top: 40px;
+  font-size: 13px;
+}
+.contact-info .address li{
+	margin-bottom: 2px;
+}
+.contact-info .address li:first-child{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.contact-info .number p {
+	margin-top: 15px;
+	line-height: 1.6;
+	font-size: 12px;
+}
+
+.contact-info img{
+	width: 138px;
+  margin-top: 22px;
+}
