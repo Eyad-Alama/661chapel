@@ -1,0 +1,46 @@
+* { margin:0; padding:0; }
+
+.header a.logo {
+  display: block;
+  background: url('../img/logo.png') transparent no-repeat;
+  text-indent: -9999px;
+  width: 166px;
+  height: 125px;
+  position: relative;
+  z-index: 9999;
+}
+
+body{
+	background: #06127B;
+}
+
+img{
+	width: 100%;
+}
+
+.welcome{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-1.gif") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.intro{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/Chapel/big/landing-2.jpg") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 166px 105px;
+}
+
+.girl{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.gif") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 166px 105px;
+}
+
+.wine{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.gif") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 166px 105px;
+}

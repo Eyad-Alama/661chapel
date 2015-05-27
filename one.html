@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+
+		<title>Supersized - Full Screen Background Slideshow jQuery Plugin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/onepage-scroll.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>	
+		
+	</head>
+<body>	
+	<div class="main">
+		<section class="welcome"></section>
+		<section class="intro">
+			<div class="header">
+				<a href="/" class="logo">661 Chapel</a>
+			</div>
+		</section>
+		<section class="girl">
+			<div class="header">
+				<a href="/" class="logo">661 Chapel</a>
+			</div>
+		</section>
+		<section class="wine">
+		<div class="header">
+			<a href="/" class="logo">661 Chapel</a>
+		</div>
+		</section>
+	</div>
+
+
+	<span class="deco"></span>
+	
+	<div class="footer">
+		<p>&copy; 2015 Gamuda Land. All Rights Reserved. <a href="#">Disclaimer</a> | <a href="#">Privacy</a></p>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$(".main").onepage_scroll({
+			   sectionContainer: "section", 
+			   easing: "ease",
+			   animationTime: 1000,
+			   pagination: true,
+			   updateURL: false
+			});
+		});
+	</script>
+</body>
+</html>
