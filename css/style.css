@@ -80,10 +80,10 @@ section{
 }
 
 .info{
-	position: absolute;
-	top: 200px;
-	width: 40%;
-	left: 117px;
+ 	position: absolute;
+  top: 220px;
+  width: 40%;
+  left: 105px;
 }
 .info p{
 	font-size: 22px;
