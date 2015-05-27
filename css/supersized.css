@@ -129,6 +129,10 @@ body {
 #supersized li{
 	background: #06127B;
 }
+#supersized li.slide-0{
+	position: absolute;
+	top: 0;
+}
 #supersized li.slide-1, #supersized li.slide-2, #supersized li.slide-3{
 	position: absolute;
   top: 109px;
