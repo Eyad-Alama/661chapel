@@ -50,3 +50,7 @@ ul.normal{
 ul.number{
 	list-style: char;
 }
+
+.popup{
+	padding: 0;
+}
