@@ -1,5 +1,15 @@
 * { margin:0; padding:0; }
 
+body{
+	background: #06127B;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-weight: 100;
+}
+
+img{
+	width: 100%;
+}
+
 .header a.logo {
   display: block;
   background: url('../img/logo.png') transparent no-repeat;
@@ -10,14 +20,38 @@
   z-index: 9999;
 }
 
-body{
-	background: #06127B;
+
+.deco{
+	background: url('../img/deco.png') transparent no-repeat;
+	width: 252px;
+	height: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 6%;
+  z-index: 999;
 }
 
-img{
-	width: 100%;
+.footer {
+  position: absolute;
+  bottom: 3%;
+  left: 190px;
+}
+.footer p, .footer a {
+	color: #FFF;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-size: 12px;	
 }
 
+.footer a {
+	color: #FFF;
+}
+
+section{
+	position: relative;
+}
 .welcome{
 	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-1.gif") no-repeat;
 	-webkit-background-size: cover;
@@ -43,4 +77,35 @@ img{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 166px 105px;
+}
+
+.info{
+	position: absolute;
+	top: 200px;
+	width: 40%;
+	left: 117px;
+}
+.info p{
+	font-size: 22px;
+	line-height: 1.7;
+	color: #FFCD35;
+	font-weight: 100;
+}
+
+.info p.bottom{
+	margin-top: 15px;
+}
+
+.cta{
+	display: inline-block !important;
+  width: 125px !important;
+  padding: 10px 35px;
+  color: #06127B;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgba(255,205,23,0.9);
+  font-size: 16px;
+  height: 20px !important;
+  z-index: 99999;
+  margin-top: 15px;
 }
