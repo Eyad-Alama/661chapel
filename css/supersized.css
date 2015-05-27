@@ -83,7 +83,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 3%;
   left: 190px;
 }

@@ -20,6 +20,31 @@ img{
   z-index: 9999;
 }
 
+/* This parent can be any width and height */
+.welcome {
+  text-align: center;
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  white-space: nowrap;
+  height: 100%;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.welcome:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */ 
+.welcome-logo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 479px;
+  padding: 0 3em;
+}
+
 
 .deco{
 	background: url('../img/deco.png') transparent no-repeat;
@@ -138,3 +163,45 @@ a.move-down{
 	left: 100px;
 	z-index: 99999;
 }
+
+
+/* CSS ANIMATION DELAY */
+.fadeIn {
+	/* CSS needed for animation
+	---------------------------------------------------- */
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	-o-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+
+/* Animation Times - Time for image to fade in
+---------------------------------------------------- */
+.fadeIn-1s {
+	-webkit-animation-duration:1.3s;
+	-moz-animation-duration:1.3s;
+	-o-animation-duration:1.3s;
+	animation-duration:1.3s;
+}
+
+/* Animation Delay - Time for image to be delayed
+---------------------------------------------------- */
+.fadeIn-Delay-1s {
+        -webkit-animation-delay:1.3s;
+        -moz-animation-delay:1.3s;
+        -o-animation-delay:1.3s;
+        animation-delay:1.3s;
+}
+
+
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
