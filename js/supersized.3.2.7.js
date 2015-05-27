@@ -16,6 +16,7 @@
 	----------------------------*/
 	$(document).ready(function() {
 		$('body').append('<div id="supersized-loader"></div><ul id="supersized"></ul>');
+		$('body').append('<a href="/register" class="cta">REGISTER</a>');
 
 	});
     
