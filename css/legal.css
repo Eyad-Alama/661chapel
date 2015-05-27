@@ -1,0 +1,52 @@
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body{
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	background: #FFF;
+}
+
+.logo{
+	width: 260px;
+	margin-left: -90px;
+}
+.container{
+	width: 980px;
+	margin: 25px auto;
+}
+
+h1{
+	color: #333;
+	text-decoration: underline;
+  margin: 50px 0 40px;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 18px;
+	margin: 35px 0 10px;
+}
+
+p{
+	font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	font-weight: 100;
+}
+
+ul{
+	margin-top: 25px;
+	list-style: lower-alpha;
+}
+
+ul li{
+	margin-bottom: 25px;
+}
+
+ul.normal{
+	list-style: disc;
+}
+
+ul.number{
+	list-style: char;
+}
