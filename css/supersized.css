@@ -271,11 +271,32 @@ body {
 	display: inline-block;
 }
 
+/*Register Page*/
 
+body.register{
+	background: url("../img/thanku.jpg") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+body.register .header{
+	position: relative;
+	z-index: 9999;
+}
 
 /* Thank you */
 body.thank-you{
 	overflow: hidden;
+	background: url("../img/thanku.jpg") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+body.thank-you .header{
+	position: relative;
+	z-index: 9999;
 }
 
 .thankyou-wrap{
@@ -298,4 +319,20 @@ body.thank-you{
   color: #FFCD35;
   line-height: 1.6;
   font-weight: 100;
+}
+
+.thanku-footer{
+	position: absolute;
+	bottom: 3%;
+	left: 190px;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 6, 63, 0.92);
+	z-index: 0;
 }
