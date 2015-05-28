@@ -195,7 +195,7 @@ body {
   position: absolute;
   left: 166px;
   top: 105px;
-  height: 100%;
+  bottom: 0;
 }
 
 #wufoo-z1hu24mt0es8pzx iframe{
@@ -208,8 +208,8 @@ body {
 
 
 .contact-info{
-  padding: 100px 200px;
-  height: 76.5%;
+  padding: 100px 200px 0 200px;
+  bottom: 0;
   background-color: #FFF;
   left: 59.9%;
   position: absolute;
