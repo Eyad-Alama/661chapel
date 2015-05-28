@@ -2,7 +2,7 @@
 
 body{
 	background: #06127B;
-	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	position: relative;
 }
@@ -89,6 +89,7 @@ img{
 .footer {
   position: absolute;
   bottom: 3%;
+  z-index: 9999;
   left: 190px;
 }
 .footer p, .footer a {
@@ -186,11 +187,13 @@ section{
 
 .info p.bottom{
 	margin-top: 15px;
+	font-weight: 600;
 }
 
 .cta{
 	display: inline-block !important;
   width: 125px !important;
+  font-weight: 600;
   padding: 10px 35px;
   color: #06127B;
   text-decoration: none;
