@@ -219,12 +219,14 @@ body {
 }
 
 .contact-info h1{
+	font-family: 'Open Sans', sans-serif;
   text-decoration: underline;
   width: 230px;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .contact-info .address{
+	font-family: 'Open Sans', sans-serif;
 	list-style: none;
   margin-top: 40px;
   font-size: 13px;
@@ -234,6 +236,7 @@ body {
 }
 .contact-info .address li:first-child{
 	font-size: 18px;
+	font-weight: 600;
 	margin-bottom: 5px;
 }
 
