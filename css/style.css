@@ -4,8 +4,18 @@ body{
 	background: #06127B;
 	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 100;
+	position: relative;
 }
 
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 9, 73, 0.78);
+	z-index: 0;
+}
 img{
 	width: 100%;
 }
@@ -94,6 +104,9 @@ img{
 	color: #FFF;
 }
 
+.section{
+	overflow: hidden;
+}
 section{
 	position: relative;
 }
@@ -107,21 +120,54 @@ section{
 	background: url("https://dl.dropboxusercontent.com/u/44921035/Chapel/big/landing-2.jpg") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: 166px 105px;
+	background-position: 0 0;
 }
 
 .girl{
 	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.gif") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: 166px 105px;
+	background-position: 0 0;
 }
-
 .wine{
 	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.gif") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: 166px 105px;
+	background-position: 0 0;	
+}
+
+.intro .inner{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/Chapel/big/landing-2.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 105px;
+  left: 165px;
+}
+.girl .inner{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.gif") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 105px;
+  left: 165px;
+}
+.wine .inner{
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.gif") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 105px;
+  left: 165px;
 }
 
 .info{
@@ -129,6 +175,7 @@ section{
   top: 220px;
   width: 40%;
   left: 105px;
+  z-index: 999;
 }
 .info p{
 	font-size: 23px;
