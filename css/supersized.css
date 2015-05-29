@@ -197,17 +197,12 @@ body {
   left: 166px;
   top: 105px;
   bottom: 0;
+  height: 780px;
 }
 
 #wufoo-z1hu24mt0es8pzx iframe{
-	height: 100%;
+	height: 985px;
 }
-
-#wufoo-z1hu24mt0es8pzx body{
-	overflow: hidden;
-}
-
-
 .contact-info{
   padding: 100px 200px 0 200px;
   bottom: 0;
@@ -216,6 +211,7 @@ body {
   position: absolute;
   top: 105px;
   width: 16.1%;
+  height: 885px;
 }
 
 .contact-info h1{
@@ -282,6 +278,11 @@ body.register{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0 0;
+	height: 1080px;
+}
+
+body.register .overlay{
+	height: 1090px;
 }
 
 body.register .header{
