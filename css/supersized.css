@@ -331,6 +331,14 @@ body.thank-you .header{
 	left: 190px;
 }
 
+.thanku-footer p {
+	color: #FFF;
+}
+
+.thanku-footer a {
+	color: #FFF;
+}
+
 .overlay{
 	position: absolute;
 	top: 0;
