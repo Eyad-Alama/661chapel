@@ -371,6 +371,13 @@ body.thank-you .header{
 	  top: 65px;
 	}
 
+	.thanku-footer {
+	  position: absolute;
+	  bottom: 3%;
+	  left: 20px;
+	  z-index: 9999;
+	}
+	
 	.footer{
 		left: 0;
 	}
