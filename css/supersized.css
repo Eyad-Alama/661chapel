@@ -310,6 +310,7 @@ body.thank-you .header{
   left: 166px;
   top: 105px;
   width: 100%;
+  background-size: cover;
 }
 
 .thankyou-wrap h1{
