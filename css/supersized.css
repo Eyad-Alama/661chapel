@@ -370,4 +370,8 @@ body.thank-you .header{
 	  left: 70px;
 	  top: 65px;
 	}
+
+	.footer{
+		left: 0;
+	}
 }
