@@ -118,20 +118,20 @@ section{
 }
 
 .intro{
-	background: url("https://dl.dropboxusercontent.com/u/44921035/Chapel/big/landing-2.jpg") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/u/44921035/Chapel/big/landing-2.png") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0 0;
 }
 
 .girl{
-	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.gif") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-3.png") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0 0;
 }
 .wine{
-	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.gif") no-repeat;
+	background: url("https://dl.dropboxusercontent.com/u/44921035/chapel/big/landing-last.png") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0 0;	
@@ -173,7 +173,7 @@ section{
 
 .info{
  	position: absolute;
-  top: 220px;
+  top: 170px;
   width: 40%;
   left: 105px;
   z-index: 999;
@@ -195,7 +195,7 @@ section{
   width: 125px !important;
   font-weight: 600;
   padding: 10px 35px;
-  color: #06127B;
+  color: #002266;
   text-decoration: none;
   text-transform: uppercase;
   background-color: rgba(255,205,23,0.9);

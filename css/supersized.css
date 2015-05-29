@@ -113,7 +113,7 @@ body {
 	display: inline-block !important;
   width: 125px !important;
   padding: 10px 35px;
-  color: #06127B;
+  color: #002266;
   text-decoration: none;
   text-transform: uppercase;
   background-color: rgba(255,205,23,0.9);
@@ -349,4 +349,23 @@ body.thank-you .header{
 	right: 0;
 	background-color: rgba(0, 6, 63, 0.92);
 	z-index: 0;
+}
+
+
+@media only screen and (max-width: 480px) {
+	/* Thank You Page */
+	.thankyou-wrap{
+	  background: url('../img/thanku.jpg') transparent no-repeat;
+	  height: 100%;
+	  width: 100%;
+	  background-size: cover;
+	  position: absolute;
+	  z-index: 9999;
+	  left: 0;
+	}
+
+	.thankyou-wrap h1{
+	  left: 70px;
+	  top: 65px;
+	}
 }
