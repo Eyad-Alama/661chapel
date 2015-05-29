@@ -275,12 +275,15 @@ a.move-down{
 	}
 	.info {
 	  position: relative;
-	  width: 100%;
+	  width: 350px;
 	  z-index: 999;
 	  top: 30px;
 	  padding: 0 20px;
 	  left: auto;
 	  right: auto;
+	}
+	.info p{
+		line-height: 1.4;
 	}
 	.footer{
 		left: 20px;
