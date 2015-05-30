@@ -273,9 +273,16 @@ a.move-down{
 	  top: 105px;
 	  left: 0;
 	}
+	.deco{
+		bottom: -13px;		
+	}
+	a.move-down{
+		display: none;
+	}
+
 	.info {
 	  position: relative;
-	  width: 350px;
+	  width: 280px;
 	  z-index: 999;
 	  top: 30px;
 	  padding: 0 20px;
@@ -284,6 +291,7 @@ a.move-down{
 	}
 	.info p{
 		line-height: 1.4;
+		font-size: 18px;
 	}
 	.footer{
 		left: 20px;
