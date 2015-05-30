@@ -369,6 +369,7 @@ body.thank-you .header{
 	.thankyou-wrap h1{
 	  left: 46px;
 	  top: 65px;
+	  font-size: 21px;
 	}
 
 	.thanku-footer {
@@ -377,7 +378,7 @@ body.thank-you .header{
 	  left: 20px;
 	  z-index: 9999;
 	}
-	
+
 	.footer{
 		left: 0;
 	}
