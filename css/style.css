@@ -260,6 +260,23 @@ a.move-down{
 
 
 @media only screen and (max-width: 480px) {
+	.header a.logo{
+		width: 106px;
+		height: 80px;
+		position: relative;
+		z-index: 9999;		
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	.footer p, .footer a{
+		font-size: 10px;
+	}
+
+	.intro .inner, .girl .inner, .wine .inner{
+	  top: 67px !important;
+	}
+
 	.hidden-xs{
 		display: none;
 	}
@@ -294,7 +311,7 @@ a.move-down{
 		font-size: 18px;
 	}
 	.footer{
-		left: 20px;
+		left: 13px;
 		bottom: 30px;
 	}
 }
