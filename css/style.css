@@ -269,6 +269,11 @@ a.move-down{
 		background-size: cover;
 	}
 
+
+	.blueplus, .yellowplus{
+		display: none;
+	}
+	
 	.footer p, .footer a{
 		font-size: 10px;
 	}
@@ -312,7 +317,7 @@ a.move-down{
 	}
 	.footer{
 		left: 13px;
-		bottom: 30px;
+		bottom: 15px;
 	}
 }
 
